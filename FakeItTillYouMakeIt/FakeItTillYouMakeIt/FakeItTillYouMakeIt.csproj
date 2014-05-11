@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0164494-AD65-4CF9-A413-95FDC351B6DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FakeItTillYouMakeIt</RootNamespace>
+    <AssemblyName>FakeItTillYouMakeIt</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BegginingPictures.cs" />
+    <Compile Include="Cloud.cs" />
+    <Compile Include="CloudsDoc.cs" />
+    <Compile Include="cloudWeapon.cs" />
+    <Compile Include="Coin.cs" />
+    <Compile Include="CoinsDoc.cs" />
+    <Compile Include="CoinsGroup.cs" />
+    <Compile Include="End.cs" />
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HowToPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HowToPlay.Designer.cs">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kometa.cs" />
+    <Compile Include="MovingBackground.cs" />
+    <Compile Include="Plane.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Robot.cs" />
+    <Compile Include="Star.cs" />
+    <Compile Include="StarDoc.cs" />
+    <Compile Include="Vortex.cs" />
+    <Compile Include="VortexDocs.cs" />
+    <Compile Include="Weapon.cs" />
+    <Compile Include="WeaponForClouds.cs" />
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HowToPlay.resx">
+      <DependentUpon>HowToPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\starS.psd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\starPS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenrobot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planePS copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star-picture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22462-beatuiful-night-sky-1920x1200-fantasy-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art-qauz-landscape-hills-mountains-lakes-forests-planet-sky-nebula-star.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meteor-rain-landscape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound1.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sound1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dammit.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FinallyAPresentSurprise.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OhYouTraitor.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art-qauz-landscape-hills-mountains-lakes-forests-planet-sky-nebula-star1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudPS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4508363357.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\45083633571.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\art-qauz-landscape-hills-mountains-lakes-forests-planet-sky-nebula-star2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vortexDestroyed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSvortex2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSgreenrobotFinal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSgreenrobotLeft .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSgrL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSStarv1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSStarV2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSvortexEND.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSSTARV3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kometa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSvortex.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beg3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloudPS1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oblakPS2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beg4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beg5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PSWEAPONNN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HelloBrother.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PrepareThyself.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WhatMagicIsthis.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YouAreOneOfTheGoodOnes.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21sci.vortex.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyboardControls.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
